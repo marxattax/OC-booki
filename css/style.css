@@ -105,7 +105,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.sous_encart {
+.sous-encart {
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -127,7 +127,7 @@ nav a:hover {
     height: 20px;
 }
 
-#icone_loc {
+#icone-loc {
     width : 50px;
     height: 50px;
     line-height: 50px;
@@ -138,14 +138,14 @@ nav a:hover {
     border-radius: 15px 0 0 15px;
 }
 
-.bouton_recherche {
+.bouton-recherche {
     background-color: var(--main-color);
     color: white;
     border-radius: 0 15px 15px 0;
     padding: 15px;
 }
 
-.champ_recherche {
+.champ-recherche {
     color:black;
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -370,17 +370,17 @@ footer {
     padding-left: 20px;
 }
 
-.menu_footer {
+.menu-footer {
     width:33%;
 
     display: flex;
     flex-direction: column;
 }
 
-.menu_footer a {
+.menu-footer a {
     padding-bottom: 10px;
 }
 
-.menu_footer a:hover {
+.menu-footer a:hover {
     text-decoration: underline;
 }

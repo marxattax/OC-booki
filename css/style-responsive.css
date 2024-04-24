@@ -8,11 +8,11 @@
         padding: 10px;
     }
 
-    .champ_recherche {
+    .champ-recherche {
         font-style: italic;
     }
 
-    .bouton_recherche {
+    .bouton-recherche {
         font-style: italic;
     }
 
@@ -24,7 +24,7 @@
         padding:0;
     }
 
-    .filtres_liste {
+    .filtres-liste {
         margin-top: 20px;
     }
 
@@ -115,7 +115,7 @@
         padding-right: 10px;
     }
 
-    .sous_encart {
+    .sous-encart {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -124,11 +124,11 @@
         padding-left: 10px;
     }
 
-    .champ_recherche {
+    .champ-recherche {
         font-style: normal;
     }
 
-    .bouton_recherche {
+    .bouton-recherche {
         font-style: normal;
         padding: 0;
     }
@@ -140,7 +140,7 @@
         flex-direction: column;
     }
 
-    .filtres_liste {
+    .filtres-liste {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -227,7 +227,7 @@
         flex-direction: column;
     }
 
-    .menu_footer {
+    .menu-footer {
         width:100%;
     }
 }
