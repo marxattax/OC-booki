@@ -124,8 +124,13 @@
         padding-left: 10px;
     }
 
-    #bouton_recherche  {
-        padding:0;
+    .champ_recherche {
+        font-style: normal;
+    }
+
+    .bouton_recherche {
+        font-style: normal;
+        padding: 0;
     }
 
     .filtres {
@@ -184,6 +189,13 @@
         align-items: center;
     }
 
+    .hebergements-cards .card {
+        width: 360px;
+    }
+
+    .hebergements-cards img {
+        height: 150px;
+    }
 
     .populaires-cards {
         display: flex;
