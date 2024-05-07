@@ -13,6 +13,10 @@
     color: var(--main-color);
 }
 
+.fa-star {
+    font-size: 13px;
+}
+
 body {
     margin: auto;
     display: flex;
@@ -65,7 +69,7 @@ a {
 /****** Menu navigation ********/
 
 header {
-    height: 80px;
+    height: 85px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -101,13 +105,12 @@ nav a:hover {
 .encart {
     font-size: 24px;
     font-weight: bold;
-    margin-top:20px;
-    margin-bottom: 10px;
+    margin-top:25px;
 }
 
 .sous-encart {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-top: 8px;
 }
 
 /****** Champ de recherche pour location ******/
@@ -119,12 +122,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
 
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.fa-solid {
-    height: 20px;
+    margin-top: 35px;
 }
 
 #icone-loc {
@@ -159,37 +157,40 @@ input {
     text-align: center;
 }
 
+.fa-magnifying-glass {
+    display: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 15px;
+    padding: 18px;
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.5));
+}
+
 /****** Filtres *******/
 
 .filtres {
-    height:50px;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    padding-right:20px;
 }
 
 .filtre {
-    height: 50px;
-    line-height: 30px;
     text-align: center;
     border: 3px solid;
     border-color: var(--main-bg-color);
     border-radius: 25px;
-    padding : 10px;
-    margin-left:10px;
+    padding : 14px 19px 14px 19px;
+    margin-left: 12px;
 }
 
 .filtre:hover {
     background-color: var(--filter-bg-color);
 }
 
-.fa-solid {
-    padding-right:10px;
+.filtre i {
+    padding-right: 10px;
 }
 
 /****** Note informative *******/
@@ -198,7 +199,7 @@ input {
     display: flex;
     height: 28px;
     line-height: 28px;
-    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .fa-info {
@@ -206,7 +207,6 @@ input {
     width: 12px;
     line-height: 12px;
     text-align: center;
-    background-color: white;
     border: 2px solid;
     border-color: #F2F2F2;
     border-radius: 50%;
@@ -218,13 +218,14 @@ input {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -235,41 +236,37 @@ input {
 }
 
 .hebergements-cards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    gap: 0 4%;
+    justify-content: center;
 }
 
-.hebergements-cards .card {
-    width: 240px;
-    margin-top: 33px;
-
-    display: flex;
-    flex-direction: column;
+.hebergements-cards a {
+    margin-top:33px;
 }
 
 .hebergements-cards img {
+    width: 100%;
     height: 100px;
     border-radius: 20px 20px 0 0;
 }
 
 .hebergements-cards .card-content {
-    height: 33%;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top:5px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 0;
     font-size: 14px;
+    margin-top: 5px;
 }
 
 .more {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .more a {
@@ -317,7 +314,7 @@ input {
 
 .populaires-cards .card-subtitle {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .populaires-cards .card-rating {
@@ -327,8 +324,8 @@ input {
 /******* Activités *******/
 
 .activites {
-    margin: auto;
     margin-top: 50px;
+    padding:20px;
 }
 
 .activites-cards {
@@ -336,21 +333,21 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap:2%;
 }
 
 .card-activite {
-    width: 100%;
+    width: 23%;
     border: 3px solid;
     border-color: var(--main-bg-color);
     border-radius: 20px;
-    margin-right: 20px;
-    box-shadow: 0px 0px 5px var(--main-bg-color);
+    box-shadow: 0px 0px 8px var(--main-bg-color);
 }
 
 .card-activite img {
     object-fit: cover;
     width: 100%;
-    height: 350px;
+    height: 375px;
     border-radius: 18px 18px 0 0;
 }
 
@@ -372,7 +369,6 @@ footer {
 
 .menu-footer {
     width:33%;
-
     display: flex;
     flex-direction: column;
 }
